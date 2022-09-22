@@ -1,0 +1,8 @@
+.btn {
+  border: none;
+  @include boxShadow;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+}

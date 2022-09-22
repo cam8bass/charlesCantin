@@ -1,0 +1,5 @@
+.section__article {
+  margin: 5rem 2rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 30rem) 1fr;
+}

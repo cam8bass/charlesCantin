@@ -1,0 +1,21 @@
+// === COLORS ===
+$colors-black-light: #434343;
+$color-gray-dark: #4a4e69;
+$color-gray-light: #9a8c98;
+$color-brown-dark: #927b75;
+$color-brown-light: #f2e9e4;
+$color-blue-dark: #3a0ca3;
+$color-blue-light: #3f37c9;
+$color-purple-dark: #b5179e;
+$color-purple-light: #f72585;
+$color-red-dark: #bd1f36;
+$color-red-light: #e01e37;
+$color-text: #696969;
+
+// === FONTS ===
+@include googleFonts("Lato");
+@include googleFonts("Quicksand");
+@include googleFonts("Darker+Grotesque");
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Quicksand", sans-serif;
+$font-tertiary: "Darker Grotesque", sans-serif;

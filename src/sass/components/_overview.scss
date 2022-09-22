@@ -1,0 +1,48 @@
+.overview {
+ margin-right:5rem;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 4rem;
+    list-style: none;
+    
+  }
+
+  &__items {
+    border-radius: 5px;
+    @include boxShadow;
+    height: auto;
+    transition: all 0.5s;
+
+    cursor: pointer;
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+
+  &__body {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.8rem;
+    font-family: $font-primary;
+    color: $colors-black-light;
+  }
+}

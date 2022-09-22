@@ -1,0 +1,68 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  &__title {
+    margin: 5rem 0;
+    font-size: 4rem;
+    font-family: $font-tertiary;
+    color: $colors-black-light;
+  }
+
+  &__img {
+    border-radius: 3px;
+    width: 50%;
+    min-width: 30rem;
+    @include boxShadow;
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    width: 60%;
+    color: $color-text;
+    word-wrap: break-word;
+  }
+
+  &__btn {
+    text-align: end;
+    width: 70%;
+
+    &-edit {
+      margin: 4rem 0;
+      margin-right: 10rem;
+      background-color: $color-blue-dark;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover,
+      &:active {
+        background-color: $color-blue-light;
+      }
+    }
+    &-delete {
+      background-color: $color-red-dark;
+      transition: all 0.2s;
+      cursor: pointer;
+      margin-right: 1.8rem;
+
+      &:hover,
+      &:active {
+        background-color: $color-red-light;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    &-return {
+      font-size: 4rem;
+      color: $color-brown-dark;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

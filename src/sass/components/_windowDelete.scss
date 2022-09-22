@@ -1,0 +1,34 @@
+.delete {
+
+  width: 70rem;
+  height: 30rem;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+ @include boxShadow;
+ border-radius: 10px;
+
+  &__title {
+    justify-self: center;
+    font-size: 2.2rem;
+    font-family: $font-secondary;
+    margin: 2rem;
+  }
+
+  &__text {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem;
+    font-family: $font-primary;
+  }
+
+  &__btn {
+    margin-right: 2.8rem;
+    justify-self: end;
+    margin-bottom: 3rem;
+    &-cancel {
+    }
+
+    &-confirm {
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.header {
+  position: relative;
+min-height: 100vh;
+  display: grid;
+  grid-template-rows: 10rem 1fr 1fr min-content;
+
+  &__heading {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: $colors-black-light;
+
+    &-main {
+      font-size: 10rem;
+      display: block;
+      margin-bottom: 1rem;
+      font-family: $font-tertiary;
+      font-weight: normal;
+    }
+
+    &-sub {
+      font-size: 5rem;
+      font-family: $font-secondary;
+      font-weight: normal;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    max-height: 100vh;
+  }
+
+  &__icons {
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: top;
+    margin-top: 8rem;
+
+    &-insta {
+      width: 6rem;
+      margin-right: 5rem;
+      transition: all 0.2s;
+      &:hover,
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+
+    &-fb {
+      width: 6rem;
+      transition: all 0.2s;
+      &:hover,
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__bottom {
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    &-info {
+      font-size: 1.8rem;
+    }
+    &-icon {
+      margin-top: 1rem;
+      width: 1rem;
+    }
+  }
+}
