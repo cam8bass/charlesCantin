@@ -6,8 +6,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -15,15 +14,13 @@ html {
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
   position: relative;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 10rem 1fr 1fr -webkit-min-content;
   grid-template-rows: 10rem 1fr 1fr min-content;
 }
 .header__heading {
@@ -60,36 +57,25 @@ body {
 .header__icons-insta {
   width: 6rem;
   margin-right: 5rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .header__icons-insta:hover, .header__icons-insta:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 .header__icons-fb {
   width: 6rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .header__icons-fb:hover, .header__icons-fb:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 .header__bottom {
   grid-row: 4/5;
   justify-self: center;
   align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
 }
 .header__bottom-info {
@@ -101,51 +87,31 @@ body {
 }
 
 .container__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 80vh;
 }
 
 .container__delete {
   width: 100%;
   height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__article {
   margin: 5rem 2rem;
   display: grid;
-  grid-template-columns: minmax(-webkit-min-content, 30rem) 1fr;
   grid-template-columns: minmax(min-content, 30rem) 1fr;
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .article__title {
   margin: 5rem 0;
@@ -176,7 +142,6 @@ body {
   margin-right: 10rem;
   background-color: #3a0ca3;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .article__btn-edit:hover, .article__btn-edit:active {
@@ -184,7 +149,6 @@ body {
 }
 .article__btn-delete {
   background-color: #bd1f36;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
   margin-right: 1.8rem;
@@ -201,35 +165,22 @@ body {
   color: #927b75;
   text-decoration: none;
   margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.article__link-return--text {
-  font-size: 1.6rem;
-  margin-left: 1.8rem;
+  align-items: center;
 }
 
 .nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 1rem 2.5rem;
   list-style: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 .nav__link {
   text-decoration: none;
   font-size: 2.2rem;
   font-family: "Lato", sans-serif;
   font-weight: normal;
-  color: #434343;
-  -webkit-transition: color 0.2s;
+  color: red;
   transition: color 0.2s;
 }
 .nav__link:hover, .nav__link:active {
@@ -251,14 +202,9 @@ body {
   margin: 2.5rem 0;
 }
 .form__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 50rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 4rem;
 }
 .form__label {
@@ -284,15 +230,13 @@ body {
   margin-top: 0.5rem;
 }
 .form__btn {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin: 1.2rem 0;
   cursor: pointer;
 }
 .form__btn-save {
   margin-left: 2rem;
   background-color: #3a0ca3;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .form__btn-save:hover, .form__btn-save:active {
@@ -301,7 +245,6 @@ body {
 .form__btn-cancel {
   cursor: pointer;
   background-color: #bd1f36;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .form__btn-cancel:hover, .form__btn-cancel:active {
@@ -332,13 +275,11 @@ body {
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   height: auto;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 .overview__items:hover, .overview__items:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 .overview__link {
   text-decoration: none;
@@ -377,7 +318,6 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #696969;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 .filter__link:hover, .filter__link:active {
@@ -396,7 +336,6 @@ body {
   width: 70rem;
   height: 30rem;
   display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
@@ -410,8 +349,7 @@ body {
 }
 .delete__text {
   justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
 }
@@ -420,3 +358,5 @@ body {
   justify-self: end;
   margin-bottom: 3rem;
 }
+
+/*# sourceMappingURL=main.css.map */

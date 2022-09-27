@@ -1,0 +1,22 @@
+{
+  "name": "blog-v1-cam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass src/sass/main.scss src/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cam8bass/charlesCantin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cam8bass/charlesCantin/issues"
+  },
+  "homepage": "https://github.com/cam8bass/charlesCantin#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
