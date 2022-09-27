@@ -27,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $signature = hash_hmac('sha256', $sessionId, "82b9cca8c89955d90458c1420d9399b16bc83c8e7c58f709b4f3022a430a0d4fd421993ef5ecc2553798044f4b5c98f23f9215b9dd84bab0fba9b332e48d7087");
       $session = $ModelLogin->sessionContent();
       $sessionId = $session['idsession'] ?? '';
-      setcookie('signature', $signature, time() + 60 * 60 * 24 * 14, '', '', false, true);
-      setcookie('session', $sessionId, time() + 60 * 60 * 24 * 14, '', '', false, true);
+      setcookie('signature', $signature, time() + 60 * 60 * 24 * 14, '', 'www.camei8ht.fr', true, true);
+      setcookie('session', $sessionId, time() + 60 * 60 * 24 * 14, '', 'www.camei8ht.fr', true, true);
       header('location: /index.php');
     } else {
       // Si le mot de passe est incorrect
